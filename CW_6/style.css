@@ -1,0 +1,49 @@
+.japan{
+    position: relative;
+    border:  1px solid black;
+    width: 1500px;
+    height: 1000px;
+    margin: auto;
+}
+.japan::before{
+    content: "";
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    top: 200px;
+    left: 450px;
+    /* padding-top: 40px; */
+}
+h1{
+    width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+@media(max-width: 1530px){
+    .japan{
+        width: 1200px;
+        height: 800px;
+    }
+    .japan::before{
+        width: 450px;
+        height: 450px;
+    }
+}
+@media (max-width: 768px){
+    .japan{
+        width: 400px;
+        height: 250px;
+    }
+    .japan::before{
+        width: 150px;
+        height: 150px;
+        top:50px;
+        left: 125px;
+        padding-top: 0px;
+    }
+}
